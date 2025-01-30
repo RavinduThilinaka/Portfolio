@@ -322,11 +322,18 @@ body{
 }
 
 .bar{
-    font-style: 24px;
+    font-size: 24px;
+    
+}
+
+.Technical-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Adjust this value as needed */
 }
 
 .Technical-bars .bar{
-    margin-top: 40px 0;
+    margin-top: 20px 0;
 }
 
 .Technical-bars .bar:first-child{
@@ -455,6 +462,7 @@ body{
    flex-wrap: wrap;
    justify-content: space-between;
    align-items: flex-start;
+ 
 }
 
 .readial-bars .readial-bar{
@@ -516,25 +524,25 @@ body{
 
 @keyframes animate-path1{
     100%{
-        stroke-dashoffset: 50;;
+        stroke-dashoffset: 50;
     }
 }
 
 @keyframes animate-path2{
     100%{
-        stroke-dashoffset: 175;;
+        stroke-dashoffset: 175;
     }
 }
 
 @keyframes animate-path3{
     100%{
-        stroke-dashoffset: 125;;
+        stroke-dashoffset: 125;
     }
 }
 
 @keyframes animate-path4{
     100%{
-        stroke-dashoffset: 85;;
+        stroke-dashoffset: 20;
     }
 }
 
@@ -549,16 +557,17 @@ body{
     opacity: 0;
 }
 
-.readial-bar text{
+.readial-bar .text{
     width: 100%;
     position: absolute;
     text-align: center;
     left: 50%;
-    bottom: -5px;
+    bottom: -20px;
     transform: translateX(-50px);
     font-size: 18px;
     font-weight: 500;
     animation: showText 0.5s linear forwards;
+    white-space: nowrap;
 }
 
 @keyframes slideRigth{
