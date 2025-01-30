@@ -395,7 +395,171 @@ body{
     width: 96%;
 }
 
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
 
+.progress-line.html span::after{
+    content: "90%";
+}
+
+.progress-line.css span::after{
+    content: "65%";
+}
+
+.progress-line.javascript span::after{
+    content: "52%";
+}
+
+.progress-line.react span::after{
+    content: "78%";
+}
+
+.progress-line.python span::after{
+    content: "96%";
+}
+
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+.readial-bars{
+    width: 100%;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.readial-bars .readial-bar{
+    width: 50px;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.readial-bars .readial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+
+}
+
+.readial-bars .readial-bar .progress-bar{
+    stroke-width: 10;
+    stop-color: black;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation:animate-bar 1s linear forwards ;
+}
+
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+.path{
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1{
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-2{
+    animation: animate-path2 1s 1s linear forwards;
+}
+
+.path-3{
+    animation: animate-path3 1s 1s linear forwards;
+}
+
+.path-4{
+    animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;;
+    }
+}
+
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 175;;
+    }
+}
+
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 125;;
+    }
+}
+
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 85;;
+    }
+}
+
+.readial-bar .percestage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+    font-weight: 600;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.readial-bar text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 18px;
+    font-weight: 500;
+    animation: showText 0.5s linear forwards;
+}
 
 @keyframes slideRigth{
     0%{
