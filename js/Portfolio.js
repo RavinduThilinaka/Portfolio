@@ -7,3 +7,21 @@ var typed = new Typed('.text', {
 });
 
 
+
+window.addEventListener('scroll', function () {
+    const topButton = document.querySelector('.top');
+    if (window.scrollY > 200) {  
+        topButton.classList.add('visible');
+    } else {
+        topButton.classList.remove('visible');
+    }
+});
+
+
+document.querySelector('.top').addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  
+    });
+});
