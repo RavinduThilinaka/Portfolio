@@ -330,7 +330,7 @@ body{
 .Technical-bars {
     display: flex;
     flex-direction: column;
-    gap: 25px; /* Adjust this value as needed */
+    gap: 25px;
 }
 
 .Technical-bars .bar{
@@ -572,8 +572,8 @@ body{
 }
 
 .main-text{
-    padding-top: 135px;
-    margin-top: 200px;
+    padding-top: 110px;
+    margin-top: 100px;
 }
 
 .main-text h2{
@@ -586,29 +586,35 @@ body{
     color: #0ef;
 }
 
-.portfilio-content{
+.portfilio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(360px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;  
 }
 
-.row{
+.row {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-   cursor: pointer;
+    cursor: pointer;
+    height: 100%; 
+    max-width: 100%; 
 }
 
-.row img{
+.row img {
     width: 100%;
-    border-radius: 10PX;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 10px;
     display: block;
-    transition: transform 0.5s;
+    transition: transform 0.8s;
+    margin-top: 30px;
 }
 
-.layer{
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#0ef);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
     position: absolute;
     border-radius: 10px;
     left: 0;
@@ -619,21 +625,21 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 40px;
+    padding: 20px; 
     transition: height 0.5s;
 }
 
-.layer h5{
+.layer h5 {
     color: #000;
     font-size: 20px;
     line-height: 1.8;
 }
 
-.layer i{
+.layer i {
     color: #ff004f;
     margin-top: 20px;
     font-size: 22px;
-    background: #fff;
+    background: #000;
     width: 60px;
     height: 60px;
     display: flex;
@@ -642,27 +648,30 @@ body{
     border-radius: 50%;
 }
 
-.row:hover img{
-    transform: scale(1.1);
+.row:hover img {
+    transform: scale(1.05);
 }
 
-.row:hover .layer{
-    height: 100%;
+.row:hover .layer {
+    height: 100%; 
 }
+
 
 .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     padding-left: 32px;
-    margin-top: 132px;
+    margin-top: 90px;
+    position: relative;
 }
 
 .contact-text h2{
     font-size: 85px;
     line-height: 1;
     text-align: center;
+    
 }
 
 .contact-text h2 span{
@@ -670,7 +679,7 @@ body{
 }
 
 .contact-text h4{
-    margin: 15px 0;
+    margin: 30px 0;
     color: rgba(228, 228, 228);
     font-size: 20px;
     font-weight: 700; 
@@ -685,11 +694,16 @@ body{
 
 .contact-list{
     margin-bottom: 3rem;
+   
 }
 
 .contact-list li{
     margin-bottom: 10px;
     display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
 }
 
 .contact-list i{
@@ -730,49 +744,77 @@ body{
     box-shadow: 0 0 20px #0ef;
 }
 
-.contact-form form{
-    position: relative;
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.5);
+    backdrop-filter: blur(10px);
+    width: 80%;
+    text-align: center;
+   height: 100%;
 }
 
-.contact-form form input,form textarea{
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.2);
     border: none;
     outline: none;
-    width: 90%;
-    padding: 18px;
-    background: #555557;
-    color: #000;
+    border-radius: 5px;
+    color: white;
     font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
+    transition: 0.3s ease;
 }
 
-.contact-form textarea{
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #ccc;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.contact-form textarea {
     resize: none;
-    height: 230px;
+    height: 150px;
 }
 
-.contact-form form .send{
-    display: inline-block;
+.send {
     padding: 12px 20px;
     background: #0ef;
-    border-radius: 20px;
-    font-size: 16px;
     color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay:2s;
-    box-shadow: 0 0 5px #0ef, 
-    0 0 25px #0ef
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
-.contact-form form .send:hover{
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan,0 0 50px cyan,
-    0 0 100px cyan,0 0 200px cyan;
+.send:hover {
+    background: cyan;
+    transform: scale(1.1);
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.send {
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 1.5s;
 }
 
 .last-text p{
@@ -784,19 +826,32 @@ body{
     margin-top: 80px;
 }
 
-.top{
+.top {
     position: fixed;
     bottom: 2.1rem;
     right: 2.1rem;
-   
+    opacity: 0; 
+    pointer-events: none;
+    transition: opacity 0.5s ease; 
 }
 
-.top i{
+.top.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.top i {
     color: #000;
     background: #0ef;
     font-size: 20px;
     padding: 10px;
     border-radius: 0.5rem;
+    transition: transform 0.3s ease; 
+}
+
+
+.top i:hover {
+    transform: scale(1.2); 
 }
 
 @keyframes slideRigth{
