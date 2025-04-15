@@ -25,3 +25,14 @@ document.querySelector('.top').addEventListener('click', function (event) {
         behavior: 'smooth'  
     });
 });
+
+// Add this JavaScript for scroll effect
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    header.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Add animation delays for navbar items
+document.querySelectorAll('.navbar a').forEach((link, index) => {
+    link.style.animationDelay = `${0.2 * index}s`;
+});
