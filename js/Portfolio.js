@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Preloader
+
     const preloader = document.querySelector('.preloader');
     
     window.addEventListener('load', function() {
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     });
 
-    // Typed.js Animation
+   
     const typed = new Typed('.text', {
         strings: ['Developer', 'Designer', 'Freelancer', 'Creator'],
         typeSpeed: 100,
@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
         loop: true
     });
 
-    // Sticky Header
+ 
     const header = document.querySelector('.header');
     window.addEventListener('scroll', function() {
         header.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // Mobile Menu Toggle
+  
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.querySelector('.navbar');
     
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.classList.toggle('active');
     });
 
-    // Close mobile menu when clicking on a link
+
     document.querySelectorAll('.navbar a').forEach(link => {
         link.addEventListener('click', function() {
             menuToggle.classList.remove('active');
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth Scrolling for Anchor Links
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Back to Top Button
+   
     const backToTop = document.querySelector('.back-to-top');
     
     window.addEventListener('scroll', function() {
@@ -70,16 +70,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Project Filtering
+ 
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
     
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remove active class from all buttons
+        
             filterButtons.forEach(btn => btn.classList.remove('active'));
             
-            // Add active class to clicked button
+           
             this.classList.add('active');
             
             const filterValue = this.getAttribute('data-filter');
@@ -94,10 +94,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // GSAP Animations
+    
     gsap.registerPlugin(ScrollTrigger);
     
-    // Animate sections on scroll
+    
     gsap.utils.toArray('section').forEach(section => {
         gsap.from(section, {
             scrollTrigger: {
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Animate skills bars
+
     document.querySelectorAll('.skill-progress').forEach(bar => {
         gsap.from(bar, {
             scrollTrigger: {
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Animate radial skills
+
     document.querySelectorAll('.radial-progress').forEach(radial => {
         const progress = radial.getAttribute('data-progress');
         const circleFill = radial.querySelector('.circle-fill');
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Particles.js Configuration
+    
     if (document.getElementById('particles-js')) {
         particlesJS('particles-js', {
             "particles": {
@@ -251,24 +251,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Form Submission
+    
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
+           
             const name = this.querySelector('#name').value;
             const email = this.querySelector('#email').value;
             const message = this.querySelector('#message').value;
             
-            // Here you would typically send the form data to a server
+           
             console.log('Form submitted:', { name, email, message });
             
-            // Show success message
+          
             alert('Thank you for your message! I will get back to you soon.');
             
-            // Reset form
+         
             this.reset();
         });
     }
