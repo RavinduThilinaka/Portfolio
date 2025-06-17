@@ -1630,3 +1630,16 @@ section {
         font-size: 1rem;
     }
 }
+
+/* New media query specifically for hero image visibility */
+@media (max-width: 768px) {
+    .hero-image {
+        display: none;
+    }
+    
+    .home-content {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 80px;
+    }
+}
