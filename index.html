@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Portfolio | Ravindu Thilinaka</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Spline script -->
-    <link rel="stylesheet" href="./styles.css"></link>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.30/build/spline-viewer.js"></script>
+   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <!-- Loading Overlay -->
+    <div id="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading Portfolio</div>
+            <div class="loading-progress">
+                <div class="loading-progress-bar"></div>
+            </div>
+            <div class="loading-percentage">0%</div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header>
         <a href="#" class="logo">Portfo<span>lio.</span></a>
@@ -51,6 +63,7 @@
         <!-- Spline 3D Animation with Frame Style 2 -->
         <div class="spline-container">
             <div class="frame-style-2">
+                <!-- Replace with your Spline scene URL -->
                 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.48/build/spline-viewer.js"></script>
                 <spline-viewer url="https://prod.spline.design/vRTHpey7jU7COAND/scene.splinecode"></spline-viewer>
             </div>
@@ -699,6 +712,7 @@
     </div>
     <!-- Particle.js Library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./script.js"></script>
+     <script src="./script.js"></script>
+    
 </body>
 </html>

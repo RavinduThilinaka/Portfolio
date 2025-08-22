@@ -1,3 +1,30 @@
+        // Loading Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadingOverlay = document.getElementById('loading-overlay');
+            const progressBar = document.querySelector('.loading-progress-bar');
+            const percentageText = document.querySelector('.loading-percentage');
+            
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 10;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(interval);
+                    
+                    // Hide loading overlay after a short delay
+                    setTimeout(() => {
+                        loadingOverlay.style.opacity = '0';
+                        setTimeout(() => {
+                            loadingOverlay.style.display = 'none';
+                        }, 500);
+                    }, 500);
+                }
+                
+                progressBar.style.width = `${progress}%`;
+                percentageText.textContent = `${Math.round(progress)}%`;
+            }, 200);
+        });
+
         // Initialize particles.js
         particlesJS('particles-js', {
             particles: {
