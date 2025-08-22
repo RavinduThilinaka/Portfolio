@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio | Futuristic Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Spline script -->
+    <link rel="stylesheet" href="./styles.css"></link>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">Portfo<span>lio.</span></a>
+        
+        <!-- Mobile Menu Toggle -->
+        <div id="menu-icon" class="fas fa-bars"></div>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Particle Animation -->
+    <section class="hero" id="home">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Ravindu</span></h1>
+            <h3 class="dynamic-text"></h3>
+            <p>I’m an IT undergraduate with a strong passion for technology, design, and problem-solving. I specialize in crafting digital experiences that combine creativity with functionality, focusing on building responsive, user-friendly websites and applications.</p>
+            
+            <!-- Social Icons -->
+            <div class="hero-social">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+            
+            <div class="btn-box">
+                <a href="#projects" class="btn">My Work</a>
+                <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            </div>
+        </div>
+        
+        <!-- Spline 3D Animation with Frame Style 2 -->
+        <div class="spline-container">
+            <div class="frame-style-2">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.48/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/vRTHpey7jU7COAND/scene.splinecode"></spline-viewer>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <!-- Tree Branch Elements for About Section -->
+        <div class="about-tree-branches">
+            <div class="branch about-branch-main"></div>
+            <div class="branch about-branch-1"></div>
+            <div class="branch about-branch-2"></div>
+            <div class="branch about-branch-3"></div>
+            <div class="branch about-branch-4"></div>
+            <div class="branch about-branch-5"></div>
+            
+            <div class="leaf about-leaf-1"></div>
+            <div class="leaf about-leaf-2"></div>
+            <div class="leaf about-leaf-3"></div>
+            <div class="leaf about-leaf-4"></div>
+            <div class="leaf about-leaf-5"></div>
+            <div class="leaf about-leaf-6"></div>
+        </div>
+        
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-img hidden">
+                <!-- Replace with your image -->
+                <div class="image-container">
+                    <img src="./Images/profile.png" alt="Profile Image">
+                </div>
+            </div>
+            <div class="about-text hidden">
+               <h3>Full Stack Developer | Undergraduate in IT</h3>
+                <p>Hi, I’m <b>Ravindu Thilinaka</b>, an enthusiastic and dedicated undergraduate student pursuing an IT degree. With a strong interest in modern web technologies, I focus on building responsive, user-friendly, and scalable applications.</p>
+                <p>My expertise lies in <b>React, Node.js, HTML, CSS, and Tailwind CSS</b>, which I use to create seamless front-end experiences and robust back-end solutions. I enjoy turning ideas into functional projects that combine clean design with practical functionality.</p>
+                <p>As a passionate learner, I constantly explore new technologies and frameworks to improve my skills and deliver creative, efficient, and impactful solutions. My goal is to grow into a professional full stack developer capable of solving real-world challenges through technology.</p>
+
+                <!-- Added buttons for Download CV and Contact Me -->
+                <div class="about-buttons">
+                    <a href="./document/Ravindu Thilinaka.pdf" class="about-btn" download="Ravindu_CV.pdf">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="about-btn about-btn-outline">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with 3D Cards and Matrix Animation -->
+    <section class="skills-section" id="skills">
+        <!-- Matrix Animation Container -->
+        <div class="matrix-container" id="matrix-container"></div>
+        
+        <h2 class="section-title">My <span>Skills</span></h2>
+        
+        <div class="skills-content">
+            <!-- Tools & Technologies -->
+            <div class="skills-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skills-grid">
+
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-title">React</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="80"></div>
+                        </div>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                    
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-title">JavaScript</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="70"></div>
+                        </div>
+                        <div class="skill-percentage">70%</div>
+                    </div>
+                    
+                
+                    
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-title">SQL & NoSQL</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="65"></div>
+                        </div>
+                        <div class="skill-percentage">65%</div>
+                    </div>
+                    
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="skill-title">Node.js</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="50"></div>
+                        </div>
+                        <div class="skill-percentage">50%</div>
+                    </div>
+                    
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-title">HTML 5</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="90"></div>
+                        </div>
+                        <div class="skill-percentage">90%</div>
+                    </div>
+
+                     <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-title">Css</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="85"></div>
+                        </div>
+                        <div class="skill-percentage">85%</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Professional Skills -->
+            <div class="skills-category">
+                <h3>Professional Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="skill-title">Creativity</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="80"></div>
+                        </div>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                    
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-title">Problem Solving</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="75"></div>
+                        </div>
+                        <div class="skill-percentage">75%</div>
+                    </div>
+                    
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="skill-title">Communication</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="85"></div>
+                        </div>
+                        <div class="skill-percentage">85%</div>
+                    </div>
+                    
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="skill-title">Teamwork</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="78"></div>
+                        </div>
+                        <div class="skill-percentage">78%</div>
+                    </div>
+                    
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                               <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="skill-title">Time Management</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="60"></div>
+                        </div>
+                        <div class="skill-percentage">60%</div>
+                    </div>
+                    
+                    <div class="skill-item hidden">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                            <div class="skill-title">Decision Making</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" data-percentage="70"></div>
+                        </div>
+                        <div class="skill-percentage">70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with Tree Branch Design -->
+    <section class="services" id="services">
+        <h2 class="section-title">My <span>Services</span></h2>
+        
+        <!-- Tree Branch Elements -->
+        <div class="tree-branches">
+            <div class="branch branch-main"></div>
+            <div class="branch branch-1"></div>
+            <div class="branch branch-2"></div>
+            <div class="branch branch-3"></div>
+            <div class="branch branch-4"></div>
+            <div class="branch branch-5"></div>
+            
+            <div class="leaf leaf-1"></div>
+            <div class="leaf leaf-2"></div>
+            <div class="leaf leaf-3"></div>
+            <div class="leaf leaf-4"></div>
+            <div class="leaf leaf-5"></div>
+            <div class="leaf leaf-6"></div>
+        </div>
+        
+        <div class="services-container">
+            <div class="service-box hidden">
+                <div class="service-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive and engaging user interfaces and experiences that enhance usability, improve user satisfaction, and create visually appealing digital products.</p>
+            </div>
+
+            <div class="service-box hidden">
+                <div class="service-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h3>Project Management</h3>
+                <p>Managing projects efficiently from planning to execution to ensure timely delivery and quality.</p>
+            </div>
+
+            <div class="service-box hidden">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Building responsive, high-performance web applications with modern frameworks and seamless integration with backend AI services.</p>
+            </div>
+            <div class="service-box hidden">
+                <div class="service-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3>Animation & Motion Graphics</h3>
+                <p>Creating engaging animations and motion graphics to enhance storytelling and visual communication.</p>
+            </div>
+            <div class="service-box hidden">
+                <div class="service-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>E-learning Solutions</h3>
+                <p>Creating interactive online learning platforms and courses for educational institutions and businesses.</p>
+            </div>
+        <div class="service-box hidden">
+            <div class="service-icon">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <h3>Game Development</h3>
+            <p>Creating engaging and interactive games for desktop, mobile, and web platforms.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Projects Section with Snow Animation -->
+    <section class="projects" id="projects">
+        <!-- Snow Animation Container -->
+        <div class="snow-container" id="snow-container"></div>
+        
+        <h2 class="section-title">My <span>Projects</span></h2>
+        
+        <!-- Project Filter Buttons -->
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="gaming">Gaming</button>
+            <button class="filter-btn" data-filter="webapp">Web App</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="web">Web Dev</button>
+        </div>
+        
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-box hidden" data-category="gaming">
+                <div class="project-img-container">
+                    <img src="./Images/spygames.png" alt="SpyGames Website" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-badge">Featured</div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>SpyGames Website</h3>
+                    <p>An interactive gaming website built with React and Tailwind CSS. Designed with smooth animations, responsive layouts, and an engaging UI to give players an immersive experience.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML & CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/RavinduThilinaka/Spy-Games-frontend.git">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Project 2 -->
+            <div class="project-box hidden" data-category="webapp">
+                <div class="project-img-container">
+                    <img src="./Images/learnlab.png" alt="Skill Share Website" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-badge">New</div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Learn Lab Website</h3>
+                    <p>A collaborative learning platform where users can share, explore, and access different skills. Built with React and Tailwind CSS for a responsive UI, and powered by Spring Boot with MySQL for robust backend and data management.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-live-demo-link.com" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/RavinduThilinaka/Learn-lab.git" target="_blank">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Project 3 -->
+            <div class="project-box hidden" data-category="frontend">
+                <div class="project-img-container">
+                    <img src="./Images/petadoption.png" alt="Pet Adoption Website" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-badge">Complex</div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Pet Adoption Website</h3>
+                    <p>A user-friendly platform designed to help people connect with pets looking for a new home. Built with React and Tailwind CSS, featuring a clean UI, responsive layouts, and easy navigation for a smooth adoption experience.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML & CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-live-demo-link.com" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/RavinduThilinaka/Pet-Adoption.git" target="_blank">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Project 4 -->
+            <div class="project-box hidden" data-category="web">
+                <div class="project-img-container">
+                    <img src="./Images/starlight.png" alt="E-commerce Website" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-badge">Popular</div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Start Light Website</h3>
+                    <p>A full-featured e-commerce platform built with the MERN stack. Includes product listings, shopping cart, and a modern responsive UI powered by React and Tailwind CSS for a seamless shopping experience.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-live-demo-link.com" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/RavinduThilinaka/react-project-starlight.git" target="_blank">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Project 5 -->
+            <div class="project-box hidden" data-category="webapp">
+                <div class="project-img-container">
+                    <img src="./Images/food.png" alt="Food Website" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-badge">Innovative</div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Food Ordering Website</h3>
+                    <p>A modern food ordering and management platform where suppliers can add products, and customers can browse and place orders. The frontend is built with React and Tailwind CSS for a responsive user experience, while the backend is powered by Spring Boot with MySQL for secure and efficient data management.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-live-demo-link.com" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/RavinduThilinaka/Spring-Boot-Project.git" target="_blank">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Project 6 -->
+            <div class="project-box hidden" data-category="gaming">
+                <div class="project-img-container">
+                    <img src="./Images/typinggames.png" alt="Typing Game" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-badge">Fun</div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Typing Speed Game</h3>
+                    <p>A fun and interactive browser-based game designed to improve typing speed and accuracy. Built with pure HTML, CSS, and JavaScript, featuring dynamic word challenges and real-time scoring.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-live-demo-link.com" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/RavinduThilinaka/Typing-Game.git" target="_blank">
+                            <i class="fab fa-github"></i> Source Code</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        
+        <div class="view-more hidden">
+            <a href="#" class="view-more-btn">View More Projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact Section with Interactive Elements -->
+    <section class="contact" id="contact">
+        <!-- Tree Branch Elements for Contact Section -->
+        <div class="contact-tree-branches">
+            <div class="branch contact-branch-main"></div>
+            <div class="branch contact-branch-1"></div>
+            <div class="branch contact-branch-2"></div>
+            <div class="branch contact-branch-3"></div>
+            <div class="branch contact-branch-4"></div>
+            <div class="branch contact-branch-5"></div>
+            
+            <div class="leaf contact-leaf-1"></div>
+            <div class="leaf contact-leaf-2"></div>
+            <div class="leaf contact-leaf-3"></div>
+            <div class="leaf contact-leaf-4"></div>
+            <div class="leaf contact-leaf-5"></div>
+            <div class="leaf contact-leaf-6"></div>
+        </div>
+        
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-box hidden">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-text">
+                        <h3>Location</h3>
+                        <p>Katuwana</p>
+                    </div>
+                </div>
+                <div class="contact-box hidden">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <a href="">ravindu2001thilinaka@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-box hidden">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <a>+94 72 953 7312</a>
+                    </div>
+                </div>
+                <div class="contact-box hidden">
+                    <i class="fas fa-globe"></i>
+                    <div class="contact-text">
+                        <h3>Social Media</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form hidden">
+                <form action="#" method="POST">
+                    <div class="input-box">
+                        <input type="text" name="name" required>
+                        <label>Full Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="subject" required>
+                        <label>Subject</label>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" required></textarea>
+                        <label>Your Message</label>
+                    </div>
+                    <button type="submit" class="form-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Futuristic Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="footer-content">
+            <div class="footer-column hidden">
+                <a href="#" class="footer-logo">Portfo<span>lio.</span></a>
+                <p>Crafting intelligent digital experiences that push boundaries and create value. Specializing in AI integration and full-stack development.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column hidden">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column hidden">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">AI Integration</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Data Analysis</a></li>
+                    <li><a href="#">Automation</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column hidden">
+                <h3>Newsletter</h3>
+                <p>Subscribe to my newsletter for the latest updates, tech insights, and project releases.</p>
+                <div class="footer-newsletter">
+                    <form>
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom hidden">
+            <div class="copyright">
+                &copy; 2023 <a href="#">Ravindu</a>. All Rights Reserved.
+            </div>
+            <div class="footer-tech-stack">
+                <span class="tech-stack-item">AI</span>
+                <span class="tech-stack-item">Machine Learning</span>
+                <span class="tech-stack-item">React</span>
+                <span class="tech-stack-item">Node.js</span>
+                <span class="tech-stack-item">Python</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- Particle.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
